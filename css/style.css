@@ -161,15 +161,44 @@ h2.lineup {
 
 
 /* stuff for azul_page.html */
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
+@media only screen and (min-width: 600px) {
+  .mobile-friendly body {
+    background: lightblue;
+  }
+  .mobile-friendly h1, h2 {
+    color: red;
+  }
+  .mobile-friendly p.dog {
+    font-family: 'Grenze', serif;
+    color: red;
+  }
+  .mobile-friendly img {
+    border: .5em solid red;
+  }
+  .mobile-friendly video.chair {
+    border: .5em dotted red;
   }
 }
-
+@media only screen and (min-width: 1000px) {
+  .mobile-friendly body {
+    background: #FFD700;
+  }
+  .mobile-friendly h1, h2 {
+    color: #228B22;
+  }
+  .mobile-friendly p.dog {
+    font-family: 'Times New Roman', Times, serif;
+    color: #228B22;
+  }
+  .mobile-friendly img {
+    border: .5em solid white;
+  }
+  .mobile-friendly video.chair {
+    border: .5em dotted white;
+  }
+}
 #tonyBed {
   float: left;
-  padding: 1em;
 }
 
 img.bed {
@@ -178,7 +207,6 @@ img.bed {
 
 #parentsBed {
   float: right;
-  padding: 1em;
 }
 
 video.chair {
