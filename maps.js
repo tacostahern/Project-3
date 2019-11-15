@@ -175,5 +175,7 @@ function initMap()
     map.setZoom(18);
     map.setCenter(marker.getPosition())
   });
-
+  
+  var trafficLayer = new google.maps.TrafficLayer();
+  trafficLayer.setMap(map);
 }
