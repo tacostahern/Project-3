@@ -161,11 +161,13 @@ h2.lineup {
 
 
 /* stuff for azul_page.html */
+
 @media only screen and (min-width: 600px) {
   .mobile-friendly body {
     background: lightblue;
   }
-  .mobile-friendly h1, h2 {
+  .mobile-friendly h1,
+  h2 {
     color: red;
   }
   .mobile-friendly p.dog {
@@ -179,11 +181,13 @@ h2.lineup {
     border: .5em dotted red;
   }
 }
+
 @media only screen and (min-width: 1000px) {
   .mobile-friendly body {
     background: #FFD700;
   }
-  .mobile-friendly h1, h2 {
+  .mobile-friendly h1,
+  h2 {
     color: #228B22;
   }
   .mobile-friendly p.dog {
@@ -197,6 +201,7 @@ h2.lineup {
     border: .5em dotted white;
   }
 }
+
 #tonyBed {
   float: left;
 }
@@ -223,6 +228,8 @@ p.dog {
 }
 
 #map {
-  height: 960px;  /* The height is 400 pixels */
-  width: 100%;  /* The width is the width of the web page */
+  height: 960px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
 }
