@@ -154,6 +154,14 @@ function initMap()
       {
         color: '#17263c'
       }]
+    },
+    {
+      featureType: 'transit',
+      elementType: 'transit.line',
+      stylers: [
+      {
+        color: '#6E2C7A'
+      }]
     }]
   });
 
@@ -178,4 +186,7 @@ function initMap()
   
   var trafficLayer = new google.maps.TrafficLayer();
   trafficLayer.setMap(map);
+  
+  var transitLayer = new google.maps.TransitLayer();
+  transitLayer.setMap(map);
 }
