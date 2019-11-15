@@ -95,6 +95,7 @@ function initMap() {
   marker.addListener('click', function() {
     infowindow.open(map, marker);
     map.setZoom(18);
+    map.setCenter(marker.getPosition())
   });
 
 }
