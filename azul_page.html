@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/normalize.css"/>
     <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/coin-slider-styles.css" type="text/css" />
     <script src="maps.js"></script>
-    <script type="text/javascript" src="jquery-1.4.2.js"></script>
-    <script type="text/javascript" src="coin-slider.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        randomStart : true,
+        $('.slider').bxSlider();
+      });
+    </script>
     <title>My Dog</title>
   </head>
   <body>
@@ -33,5 +40,9 @@
     <video class="chair" width="720" height="1280" controls>
       <source src="media/azulVideo.mp4" type="video/mp4">
     </video>
+    <div class="slider">
+      <img class="bed" src="media/azul2.jpg" alt="Azul on bed">
+      <img class="bed" src="media/azul1.jpg" alt="Azul on parent's bed">
+    </div>
   </body>
 </html>
