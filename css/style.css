@@ -11,6 +11,7 @@
 
 body {
   background: radial-gradient(#00C9FF 0%, #92FE9D 100%);
+  text-align: center;
 }
 
 h1 {
@@ -28,7 +29,7 @@ h2 {
 h3 {
   color: rgb(178, 34, 34);
   font-style: italic;
-  font-size: 1.5em
+  font-size: 1.5em;
 }
 
 p {
@@ -216,8 +217,8 @@ img.bed {
 
 video.chair {
   height: 50em;
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 50%;
+  max-height: 50%;
 }
 
 p.dog {
@@ -234,3 +235,32 @@ p.dog {
   /* The width is the width of the web page */
 }
 
+.image-sliderfade {
+	display: none;
+}
+
+
+.fade {
+	-webkit-animation-name: fade-image;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade-image;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade-image {
+	from {
+		opacity: .8
+	}
+	to {
+		opacity: 1
+	}
+}
+
+@keyframes fade-image {
+	from {
+		opacity: .8
+	}
+	to {
+		opacity: 1
+	}
+}
