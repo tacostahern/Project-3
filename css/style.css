@@ -235,32 +235,30 @@ p.dog {
   /* The width is the width of the web page */
 }
 
-.image-sliderfade {
-	display: none;
+#slides {
+    position: relative;
+    height: 300px;
+    padding: 10px;
+    margin: 10px;
+    list-style-type: none;
 }
 
+.slide {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
 
-.fade {
-	-webkit-animation-name: fade-image;
-	-webkit-animation-duration: 1.5s;
-	animation-name: fade-image;
-	animation-duration: 1.5s;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
 }
 
-@-webkit-keyframes fade-image {
-	from {
-		opacity: .8
-	}
-	to {
-		opacity: 1
-	}
-}
-
-@keyframes fade-image {
-	from {
-		opacity: .8
-	}
-	to {
-		opacity: 1
-	}
+.showing {
+    opacity: 1;
+    z-index: 2;
 }
